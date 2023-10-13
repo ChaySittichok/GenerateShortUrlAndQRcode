@@ -1,29 +1,23 @@
-# shorturl
+# ShortURL
 
-This template should help get you started developing with Vue 3 in Vite.
+โปรเจกต์ ShortURL สามารถสร้าง ShortURL จาก LongURL โปรเจกต์นี้ใช้ Vue.js เพื่อสร้างส่วนของหน้าเว็บแอปพลิเคชันและ Node.js สำหรับส่วนของเซิร์ฟเวอร์ และ MongoDB เป็นฐานข้อมูลที่ใช้ในการเก็บข้อมูล LongURL, ShortURL และจำนวนการ click 
 
-## Recommended IDE Setup
+## การติดตั้ง
+*clone โปรเจ็กต์จาก GitHub: https://github.com/ChaySittichok/GenerateShortUrlAndQRcode.git
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+*ติดตั้งแพ็คเกจใช้คำสั่ง: 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
 
+*รันเซิฟเวอร์ Node ใช้คำสั่ง:
+```sh
+node .\server.js  
+```
+
+*รันเซิฟเวอร์ใช้คำสั่ง:
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
