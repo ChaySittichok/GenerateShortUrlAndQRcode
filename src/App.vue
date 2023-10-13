@@ -31,7 +31,7 @@ const hideHideHistoryButton  = ()=>{
 
 const FetchURL = async () =>{
     try{
-        const response = await fetch('http://localhost:3333/api/shorturl');
+        const response = await fetch('https://generateurl-backend.onrender.com/api/shorturl');
         allUrl.value = await response.json();
     }
     catch (error) {
@@ -46,7 +46,7 @@ onMounted (async() => {
 
 const AddURL = async () =>{
     if(addUrl.value.startsWith('https:')||addUrl.value.startsWith('http:')){
-    const response = await fetch('http://localhost:3333/api/shorturl', {
+    const response = await fetch('https://generateurl-backend.onrender.com/api/shorturl', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const AddURL = async () =>{
 
 const generateQrCode = async () => {
   try {
-    const response = await fetch(`http://localhost:3333/api/qrcode/${generateShortUrl.value}`, {
+    const response = await fetch(`https://generateurl-backend.onrender.com/api/qrcode/${generateShortUrl.value}`, {
       method: 'GET',
     });
 
@@ -111,7 +111,7 @@ const generateQrCode = async () => {
       <div class="mid">
       <p v-if="shortUrl" class="mb-4">
           <span class="head">Short URL : </span>
-          <a :href="'http://localhost:3333/' + shortUrl" class="text-green-500">{{ shortUrl }}</a>
+          <a :href="'https://generateurl-backend.onrender.com/' + shortUrl" class="text-green-500">{{ shortUrl }}</a>
         </p>
         <div class="qr">
           <img v-if="qrCodeStore" :src="qrCodeStore" alt="QR Code" class="mb-2" />
@@ -132,7 +132,7 @@ const generateQrCode = async () => {
         </p>
         <p>
           <span class="head">Short URL : </span>
-          <a :href="'http://localhost:3333/' + url.shortUrl" class="text-blue-500 hover:underline">{{ url.shortUrl }}</a>
+          <a :href="'https://generateurl-backend.onrender.com/' + url.shortUrl" class="text-blue-500 hover:underline">{{ url.shortUrl }}</a>
         </p>
         <p>
           <span class="head">Clicks : </span>{{ url.clicks }}
