@@ -90,7 +90,6 @@ const generateQrCode = async () => {
 <template>
   <div class="page-content pt-2">
     <div class="content w-1/2 p-6 mb-6 rounded-lg">
-      <div class="input rounded-lg">
       <h2 class="text-2xl font-bold mb-4 text-center">Short URL</h2>
       <div class="mb-4">
         <div class="flex">
@@ -123,7 +122,7 @@ const generateQrCode = async () => {
         Hide History
       </button>
     </div>
-  </div>
+
     
     <div v-if="history" class="mt-10">
       <div v-for="url in allUrl" :key="url.id" class="mb-4 border p-4 rounded-lg W-1/2">
@@ -145,11 +144,6 @@ const generateQrCode = async () => {
 
 
 <style scoped>
-/* .input{
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-} */
-
 .qr{
   display: flex;
   justify-content: center;
@@ -164,7 +158,6 @@ const generateQrCode = async () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   height: 100%;
 }
 button{
