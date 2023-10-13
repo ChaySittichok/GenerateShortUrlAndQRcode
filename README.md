@@ -5,18 +5,18 @@
 ## การติดตั้ง
 *clone โปรเจ็กต์จาก GitHub: https://github.com/ChaySittichok/GenerateShortUrlAndQRcode.git
 
-*ติดตั้งแพ็คเกจใช้คำสั่ง: 
+***ติดตั้งแพ็คเกจใช้คำสั่ง: 
 ```sh
 npm install
 ```
 
 
-*รันเซิฟเวอร์ Node ใช้คำสั่ง:
+***รันเซิฟเวอร์ Node ใช้คำสั่ง:
 ```sh
 node .\server.js  
 ```
 
-*รันเซิฟเวอร์ใช้คำสั่ง:
+***รันเซิฟเวอร์ใช้คำสั่ง:
 ```sh
 npm run dev
 ```
